@@ -1,11 +1,12 @@
-# Homebrew Tap for KeyPulse
+# Homebrew Tap for Penpal
 
 ```bash
-brew tap Longfellow1/keypulse
-brew install keypulse
-keypulse install init
+brew tap Longfellow1/penpal
+brew install penpal
+penpal install init
+penpal doctor
 ```
 
-This tap installs the `keypulse` CLI. Runtime initialization, launchd jobs, diagnostics, and uninstall are owned by the KeyPulse CLI.
+This tap installs the `penpal` CLI. Runtime initialization, launchd jobs, diagnostics, and uninstall are owned by the Penpal CLI.
 
-The current formula tracks the `v0.1.0-preview.1` KeyPulse install lifecycle preview tag.
+The current formula tracks the `v0.2.0-preview.1` Penpal preview tag. The old `keypulse` formula is kept reachable through `formula_renames.json`, so `brew upgrade keypulse` moves to `penpal`.
