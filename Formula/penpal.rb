@@ -3,9 +3,9 @@ class Penpal < Formula
 
   desc "The local memory all your AIs share"
   homepage "https://github.com/Longfellow1/penpal"
-  url "https://github.com/Longfellow1/penpal/archive/refs/tags/v0.4.0.tar.gz"
-  version "0.4.0"
-  sha256 "9190a82e5d49657b7e1edfb2d5255673805a88f2d18f3a52912234672691a1f2"
+  url "https://github.com/Longfellow1/penpal/archive/refs/tags/v0.4.1.tar.gz"
+  version "0.4.1"
+  sha256 "29fba6c29ef0af53f2e47e9e53db8ad6cf82e76fd4085b8241cc0ccb9d25a420"
   license "Apache-2.0"
   head "https://github.com/Longfellow1/penpal.git", branch: "main"
 
