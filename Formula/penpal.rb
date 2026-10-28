@@ -3,9 +3,9 @@ class Penpal < Formula
 
   desc "The local memory all your AIs share"
   homepage "https://github.com/Longfellow1/penpal"
-  url "https://github.com/Longfellow1/penpal/archive/refs/tags/v0.2.0-preview.1.tar.gz"
-  version "0.2.0-preview.1"
-  sha256 "ad750944179756159d40b8b00b6ca60f2f004ca37de224a26482e194d7840edf"
+  url "https://github.com/Longfellow1/penpal/archive/refs/tags/v0.4.0.tar.gz"
+  version "0.4.0"
+  sha256 "9190a82e5d49657b7e1edfb2d5255673805a88f2d18f3a52912234672691a1f2"
   license "Apache-2.0"
   head "https://github.com/Longfellow1/penpal.git", branch: "main"
 
@@ -266,16 +266,18 @@ class Penpal < Formula
 
   def caveats
     <<~EOS
-      To initialize Penpal:
+      To initialize Penpal (also run this once when upgrading from 0.2.x):
         penpal install init
 
       Then check the setup and grant the macOS permissions it asks for:
         penpal doctor
 
-      Required permissions (System Settings -> Privacy & Security):
-        Accessibility
+      Grant these to "Penpal" (System Settings -> Privacy & Security):
         Input Monitoring
+        Accessibility
+        Full Disk Access (needed for Safari history)
       Screen Recording is not required. doctor names the exact app to grant.
+      Later upgrades keep these grants.
     EOS
   end
 
